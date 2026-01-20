@@ -1,0 +1,87 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--color-bg-main);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.page-header h1 {
+  margin: 0;
+  color: var(--color-dark);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(110, 80, 52, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(110, 80, 52, 0.15);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.btn-primary:hover {
+  background-color: #4BC2A4;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+.btn-secondary:hover {
+  background-color: #BDA775;
+}
+
+.btn-danger {
+  background-color: #D88A73;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #C77A63;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
